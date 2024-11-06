@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puyo Puyo Simulator</title>
+  <style>
+    /* グリッドスタイル */
+    #game-board {
+      display: grid;
+      grid-template-columns: repeat(6, 30px);
+      grid-template-rows: repeat(12, 30px);
+      gap: 2px;
+      margin: 20px auto;
+      width: 200px;
+    }
+    .cell {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ccc;
+    }
+    .puyo { border-radius: 50%; }
+    .red { background-color: red; }
+    .blue { background-color: blue; }
+    .green { background-color: green; }
+    .yellow { background-color: yellow; }
+  </style>
+</head>
+<body>
+  <div id="game-board"></div>
+  <script src="puyo.js"></script>
+</body>
+</html>
